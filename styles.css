@@ -3,6 +3,9 @@
     background-color: white;
     background-color: slategray;
     --font-color: white;
+    --valid-color: rgb(44, 238, 144);
+
+    --invalid-color: rgb(255, 127, 80);
     font-size: 4.5rem;
     font-family: "Roboto",sans-serif;
 }
@@ -31,6 +34,8 @@ img{
     margin: auto;
 
 }
+
+/* LAYOUT */
 .formBG > div,li,button,.login{
     color:var(--font-color);
     position: absolute;
@@ -132,8 +137,67 @@ a:link, a:visited{
     }
 }
 
-/* input{
+
+/* STYLING */
+input{
+    color:white;
     background-color: black;
     opacity: 0.5;
+    border-radius: 5px;
+    border:2px solid white;
+    outline: none;
+    padding:2px;
+}  
+input:hover{
+    border-width: 3px;
+}
 
-}  */
+
+input:focus:valid{
+    border:3px solid var(--valid-color);
+    background-color:black;
+
+}
+input:valid{
+    border:3px solid var(--valid-color);
+    background-color:rgba(44, 238, 144,0.3);
+    transition-duration: 0.5s;
+    transition-property: background-color;
+} 
+
+input:focus:invalid{
+    border:3px solid var(--invalid-color);
+    background-color: black;
+}
+
+/* added with js */
+.inputInvalid:invalid{
+    border:3px solid var(--invalid-color);
+    background-color:  rgb(255, 127, 80 ,0.3);
+    transition-duration: 0.5s;
+    transition-property: background-color;
+}
+
+
+input::placeholder{
+    font-size: 0.9em;
+}
+
+/* adds this to .email only if .inputInvalid.invalid exists */
+.inputInvalid:invalid + .email::after{
+    content: "*Enter a valid email";
+    display: block;
+    position: absolute;
+    top:75px;
+    font-size: 0.7em;
+    color:var(--invalid-color);
+}
+
+.inputInvalid:invalid + .pNum::after{
+    content: "*Enter a valid phone number";
+    display: block;
+    position: absolute;
+    top:75px;
+    font-size: 0.7em;
+    color:var(--invalid-color);
+}
