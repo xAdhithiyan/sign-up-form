@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');   
+:root{
+    background-color: white;
+    background-color: slategray;
+    --font-color: white;
+    font-size: 4.5rem;
+    font-family: "Roboto",sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+img{
+    width:100vw;
+    height: auto;
+}
+.formBG{
+    background-color: black;
+    height:80%;
+    width: 50%;
+    position:absolute;
+    border-radius: 25px;
+    opacity: 0.6;
+    z-index: 2;
+
+    /* to center a element */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+.formBG > div,li,button,.login{
+    color:var(--font-color);
+    position: absolute;
+
+} 
+li{
+    list-style-type: none;
+}
+.one{
+    width:100%;
+    top:20px;
+    text-align: center;
+}
+.two{
+    font-size:0.4rem;
+    width:100%;
+    top:160px;
+    text-align: center;
+}
+
+hr{
+    position: relative;
+    top: 90px;
+    width: 80%;
+
+}
+input{
+    display: block;
+    margin-top:10px;
+}
+
+/* placing all the inputs */
+.line-1a, .line-1b,
+.line-2a, .line-2b,
+.line-3a, .line-3b,
+button, .login{
+    font-size: 0.3rem;
+    top:250px;
+    text-align: center;
+}
+
+.line-2a, .line-2b{
+    top:380px;
+}
+.line-3a, .line-3b{
+    top:510px;
+}
+
+.line-1a, .line-2a, .line-3a{
+    left: 15%;
+}
+
+.line-1b, .line-2b, .line-3b{
+    right:15%;
+}
+
+button{
+    top:650px;
+    color:black;
+    height: 50px;
+    width: 250px;
+
+    /* to center a element */
+    left:0;
+    right:0;
+    margin:0 auto;
+
+}
+
+.bottom{
+    top:630px;
+    width: 80%;
+}
+.login{
+    color:white;
+    top:770px;
+    font-size: 0.25em;
+    left:0;
+    right:0;
+    margin:0 auto;
+
+}
+a{
+    text-decoration: none;
+}
+a:link, a:visited{
+    color:white;
+
+}
+
+@media only screen and (max-width: 1750px ) {
+    .formBG{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 1450px) {
+    .formBG{
+        width: 75%;
+    }
+}
+
+/* input{
+    background-color: black;
+    opacity: 0.5;
+
+}  */
