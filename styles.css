@@ -296,4 +296,13 @@ input::placeholder{
         top: 920px;
     }
 
+    /* fix invalid message height for mobile view */
+    .inputInvalid:invalid + .email::after ,
+    .inputInvalid:invalid + .pNum::after,
+    .inputInvalid:invalid + .pass::after,
+    .inputInvalid:invalid + .confirm-pass::after
+    {
+        top:65px
+    }
+
 }
