@@ -1,4 +1,0 @@
-add pattern to password
-check password checking add custom message
-
-cross browsers correction
