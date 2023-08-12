@@ -181,6 +181,7 @@ input:focus:invalid{
 
 input::placeholder{
     font-size: 0.9em;
+    text-align: center;
 }
 
 /* adds this to .email only if .inputInvalid.invalid exists */
@@ -195,6 +196,22 @@ input::placeholder{
 
 .inputInvalid:invalid + .pNum::after{
     content: "*Enter a valid phone number";
+    display: block;
+    position: absolute;
+    top:75px;
+    font-size: 0.7em;
+    color:var(--invalid-color);
+}
+.inputInvalid:invalid + .pass::after{
+    content: "*Password must contain minimum of 6 characters";
+    display: block;
+    position: absolute;
+    top:75px;
+    font-size: 0.7em;
+    color:var(--invalid-color);
+}
+.inputInvalid:invalid + .confirm-pass::after{
+    content: "*Password does not match";
     display: block;
     position: absolute;
     top:75px;
