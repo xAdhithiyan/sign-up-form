@@ -6,8 +6,8 @@
 A mobile-friendly sign up form built using html,javascript and vanilla css(form validation). Each input field is color coded with a custom error message for client side validation and better user experience.  
 
 ## Screenshot
-![Screenshot from 2023-08-12 23-54-53](https://github.com/xAdhithiyan/sign-up-form/assets/113228161/1db612ea-42de-443b-ab45-41435cfa002f)
+![Screenshot from 2023-08-13 00-19-34](https://github.com/xAdhithiyan/sign-up-form/assets/113228161/64c368d5-ff52-4890-bb99-a3fa484c1c25)
 
 <div> mobile view - </div>
 
-![Screenshot 2023-08-12 at 23-56-30 Sign up form(1)](https://github.com/xAdhithiyan/sign-up-form/assets/113228161/165b2f39-e7bc-4b3a-a3fb-dce3de9aafa1)
+![Screenshot 2023-08-13 at 00-20-01 Sign up form(1)](https://github.com/xAdhithiyan/sign-up-form/assets/113228161/c8a99419-e6d9-43c9-8b0a-e8e3db080b7a)
