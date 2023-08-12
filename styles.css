@@ -59,7 +59,7 @@ li{
 
 hr{
     position: absolute;
-    top:14%;
+    top:14.5%;
     width: 80%;
 
     left:0;
@@ -136,6 +136,7 @@ a:link, a:visited{
 
 }
 
+/* for different width */
 @media only screen and (max-width: 1750px ) {
     .formBG{
         width: 60%;
@@ -144,6 +145,17 @@ a:link, a:visited{
 @media only screen and (max-width: 1450px) {
     .formBG{
         width: 75%;
+    }
+}
+
+/* for smaller height */
+@media only screen and (max-height: 600px) {
+    :root{
+        font-size: 3.2rem;
+    }
+    button{
+        height: 35px;
+        width:200px;
     }
 }
 
@@ -227,4 +239,57 @@ input::placeholder{
     top:75px;
     font-size: 0.7em;
     color:var(--invalid-color);
+}
+
+/* mobile view */
+@media only screen and (max-width: 1000px) {
+    :root{
+        font-size: 3.5rem;
+    }
+    body{
+        overflow:auto;
+    }
+    .formBG{
+        margin-top: 20px;
+        height:1000px;
+    }
+    .line-1a, .line-2a, .line-3a{
+        /* to center an INPUT element with position ABSOLUTE */
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .line-1b, .line-2b, .line-3b{
+        /* same as above to center an INPUT element with position ABSOLUTE(no idea why i have to change direction tho but it works) */
+        right: 50%;
+        transform: translate(50%, 50%);
+    }
+    .line-1a{
+        top:280px;
+    }
+    .line-1b{
+        top: 310px;
+    }
+    .line-2a{
+        top: 460px;
+    }
+    .line-2b{
+        top: 510px;
+    }
+    .line-3a{
+        top:660px;
+    }
+    .line-3b{
+        top:700px;
+    }
+
+    button{
+        top:820px;
+    }
+    .bottomm{
+        top:900px;
+    }
+    .login {
+        top: 920px;
+    }
+
 }
